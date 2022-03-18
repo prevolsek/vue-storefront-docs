@@ -7,7 +7,6 @@
   "repository": "https://github.com/vuestorefront/sylius/docs",
   "scripts": {
     "dev": "vuepress dev",
-    "build": "vuepress build",
     "build:docs": "concurrently \"yarn:docs-gen:*\" && concurrently \"yarn:docs-md:*\"",
     "docs-gen:api": "cd ../packages/sylius/api-client && api-extractor run --local",
     "docs-gen:composables": "cd ../packages/sylius/composables && api-extractor run --local",
